@@ -1,0 +1,18 @@
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program53
+    {
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int max = int.MaxValue;
+            int res = unchecked(max + 1); // Переполнение без исключения
+            Console.WriteLine(res); // int.MinValue (-2_147_483_648)
+        }
+    }
+    }
